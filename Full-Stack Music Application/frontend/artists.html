@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Library | Artists</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">Music Library</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="artists.html" class="active">Artists</a>
+      <a href="albums.html">Albums</a>
+      <a href="songs.html">Songs</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h1>Artists</h1>
+      <p class="status" id="artist-status">Loading artists...</p>
+    </section>
+
+    <section class="card form-card">
+      <h2>Artist Form</h2>
+      <form id="artist-form">
+        <div class="form-grid">
+          <div>
+            <label for="artist-id">Artist ID (for update)</label>
+            <input type="number" id="artist-id" />
+          </div>
+          <div>
+            <label for="artist-name">Artist Name</label>
+            <input type="text" id="artist-name" required />
+          </div>
+          <div>
+            <label for="artist-genre">Genre</label>
+            <input type="text" id="artist-genre" required />
+          </div>
+          <div>
+            <label for="artist-listeners">Monthly Listeners</label>
+            <input type="number" id="artist-listeners" required />
+          </div>
+          <div>
+            <label for="artist-delete-id">Artist ID to Delete</label>
+            <input type="number" id="artist-delete-id" />
+          </div>
+        </div>
+        <div class="button-row">
+          <button type="submit" class="btn">Create</button>
+          <button type="button" class="btn secondary" id="artist-update-btn">Update</button>
+          <button type="button" class="btn danger" id="artist-delete-btn">Delete</button>
+          <button type="button" class="btn ghost" id="artist-reset-btn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>All Artists</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Genre</th>
+              <th>Monthly Listeners</th>
+            </tr>
+          </thead>
+          <tbody id="artists-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/artists.js"></script>
+</body>
+</html>
