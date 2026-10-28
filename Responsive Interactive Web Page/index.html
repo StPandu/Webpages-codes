@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Study Dashboard</h1>
+        <p id="welcomeMessage"></p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Profile</a>
+    </nav>
+
+    <main>
+
+
+        <section class="card profile">
+            <h2>Alexandru Chiriac</h2>
+            <p class="about">
+                I am studying web development and learning HTML, CSS and JavaScript.
+            </p>
+
+            <img src="https://bondngo.file.force.com/file-asset-public/Maynooth_University_Logo_colour_RGB?oid=00D400000007nds" alt="My Profile photo">
+        </section>
+
+        <section class="card">
+            <h2>Weekly Goals</h2>
+
+            <ul>
+                <li>Complete project</li>
+                <li>Complete assignments</li>
+                <li>Excercise</li>
+                <li>Review Notes</li>
+            </ul>
+
+            <button id="showGoalsBtn">Show Goals</button>
+            <ul id="goalOutput"></ul>
+        </section>
+
+        <section class="card status">
+            <h2>Study Status</h2>
+
+            <p class="status-text">Status: Active</p>
+
+            <p id="sessionCount">Study sessions today: 0</p>
+
+            <button id="addBtn">Add Session</button>
+            <button id="resetBtn">Reset</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Alexandru Chiriac | CS230</p>
+        <p>Last updated: Feb 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

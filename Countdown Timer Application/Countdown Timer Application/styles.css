@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Orbitron&display=swap');
+
+body{
+    background-color: lightblue;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+nav{
+    padding: 10px;
+}
+
+.nav-btn{
+    padding:10px 20px;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.apple{
+    background-image: url("apple.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:300px;
+    height:300px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#timer{
+    font-family: Orbitron, sans-serif;
+    font-size:48px;
+    color:white;
+}
+
+#timer:hover{
+    color:yellow;
+}
+
+.buttons{
+    margin-top:20px;
+}
+
+button{
+    font-family: Roboto, sans-serif;
+    color:white;
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    cursor:pointer;
+}
+
+#startBtn{
+    background-color:green;
+}
+
+#pauseBtn{
+    background-color:orange;
+}
+
+#stopBtn{
+    background-color:red;
+}
+
+button:hover{
+    border:2px solid black;
+}
